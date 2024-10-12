@@ -9,14 +9,13 @@
     </div>
 </section>
 
-<!--Articulos -->
+<!-- Articulos -->
 <section class="contenido__articulos">
     <div class="articulos__fondo">
         <div class="columna">
             <div class="articulos">
-
                 <div class="articulos__columna">
-                    <a href="http://127.0.0.1:8000/emprendimientos/detalle/2/">
+                    <a href="{% url 'emprendimientos:detalle_articulo' 2 %}">
                         <img class="imagen__emprendimiento" src="{% static 'img/Melania_carbo.webp' %}" alt="">
                         <div class="texto magna">
                             <h2>CHACO CHARCOAL</h2>
@@ -24,19 +23,21 @@
                     </a>
                 </div>
             </div>
+
             <div class="articulos">
                 <div class="articulos__columna">
-                    <a href="#">
+                    <a href="{% url 'emprendimientos:detalle_articulo' 3">
                         <img class="imagen__emprendimiento" src="{% static 'img/Emilio-Ocampo-1.jpg' %}" alt="">
                         <div class="texto magna">
-                         <h2>SABORES Y SABERES</h2>
+                            <h2>SABORES Y SABERES</h2>
                         </div>
                     </a>
                 </div>
             </div>
+
             <div class="articulos">
                 <div class="articulos__columna">
-                    <a href="http://127.0.0.1:8000/emprendimientos/detalle/3/">
+                    <a href="{% url 'emprendimientos:detalle_articulo' 4 %}">
                         <img  class="imagen__emprendimiento" src="{% static 'img/naturaleza_geometrica.png' %}" alt="">
                         <div class="texto magna">
                             <h2>NATURALEZA GEOMÉTRICA</h2>
@@ -49,17 +50,18 @@
         <div class="columna">
             <div class="articulos">
                 <div class="articulos__columna">
-                    <a href="http://127.0.0.1:8000/emprendimientos/detalle/1/">
+                    <a href="{% url 'emprendimientos:detalle_articulo' 1 %}">
                         <img class="imagen__emprendimiento" src="{% static 'img/tana_alfajores.png' %}" alt="">
                         <div class="texto magna">
                             <h2>ALFAJORES LA TANA</h2>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
+
             <div class="articulos">
                 <div class="articulos__columna">
-                    <a href="http://127.0.0.1:8000/emprendimientos/detalle/6/">
+                    <a href="{% url 'emprendimientos:detalle_articulo' 6 %}">
                         <img class="imagen__emprendimiento" src="{% static 'img/borrachos.png' %}" alt="">
                         <div class="texto magna">
                             <h2>CULLEN HARRISON BEER</h2>
@@ -67,9 +69,10 @@
                     </a>
                 </div>
             </div>
+
             <div class="articulos">
                 <div class="articulos__columna">
-                    <a href="http://127.0.0.1:8000/emprendimientos/detalle/5/">
+                    <a href="{% url 'emprendimientos:detalle_articulo' 5 %}">
                         <img class="imagen__emprendimiento" src="{% static 'img/miel_chaco.png' %}" alt="">
                         <div class="texto magna">
                             <h2>ARBOREA MIEL</h2>
@@ -81,7 +84,5 @@
     </div> 
 </section>
 
-
-
-<!--Articulos End-->
+<!-- Articulos End -->
 {% endblock contenido %}
