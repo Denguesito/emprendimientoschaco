@@ -4,4 +4,4 @@ from .models import Articulo
 class ArticuloForm(forms.ModelForm):
     class Meta:
         model = Articulo
-        fields = ['titulo', 'autor', 'contenido', 'categoria', 'imagen']
+        fields = ['titulo',  'contenido', 'categoria', 'imagen']

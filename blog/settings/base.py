@@ -21,9 +21,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 SECRET_KEY = '2q8gtsi4+&i(=x-a_(96fbx@rvie0)4p(bdd66p32x_06v4iz2'
 DEBUG = True
+ALLOWED_HOSTS = ['*']
 
+"""
 ALLOWED_HOSTS = ['emprendimientos.pythonanywhere.com']
-
+"""
 
 
 

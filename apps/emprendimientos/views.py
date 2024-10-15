@@ -17,15 +17,19 @@ class ArticuloListView(ListView):
         categoria_id = self.request.GET.get('categoria')
         ordenar_por = self.request.GET.get('ordenar_por')
 
-
+        # Filtrar por categoría si está presente
         if categoria_id:
             queryset = queryset.filter(categoria_id=categoria_id)
 
-
+        # Ordenar por visitas o por fecha de publicación
         if ordenar_por == 'asc':
             queryset = queryset.order_by('visitas')
         elif ordenar_por == 'desc':
             queryset = queryset.order_by('-visitas')
+        elif ordenar_por == 'fecha_asc':
+            queryset = queryset.order_by('fecha_publicacion')  # Orden ascendente por fecha
+        elif ordenar_por == 'fecha_desc':
+            queryset = queryset.order_by('-fecha_publicacion')  # Orden descendente por fecha
 
         return queryset
 
