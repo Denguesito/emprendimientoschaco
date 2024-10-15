@@ -29,6 +29,12 @@
     font-size: 15px;
 }
 
+.ordenar__opciones {
+    padding: 20px 0;
+    color: var(--color-blanco);
+    font-size: 15px;
+}
+
 .ordenar__visitas {
     display: flex;
     flex-direction: column;
