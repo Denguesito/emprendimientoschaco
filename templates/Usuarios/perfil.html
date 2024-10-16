@@ -29,7 +29,7 @@
 
     <!-- Contenedor de avatar -->
     <div class="avatar_container">
-      <img id="avatarImage" src="{% static 'img/avatar_male.jpg' %}" alt="Avatar Masculino" class="avatar_image">
+      <img id="avatarImage" src="{% static 'img/avatar_male.png' %}" alt="Avatar Masculino" class="avatar_image">
     </div>
   </div>
 </section>
@@ -40,10 +40,10 @@
     const avatarImage = document.getElementById("avatarImage");
 
     if (avatarSelect.value === "male") {
-      avatarImage.src = "{% static 'img/avatar_male.jpg' %}";
+      avatarImage.src = "{% static 'img/avatar_male.png' %}";
       avatarImage.alt = "Avatar Masculino";
     } else {
-      avatarImage.src = "{% static 'img/avatar_female.jpg' %}";
+      avatarImage.src = "{% static 'img/avatar_female.png' %}";
       avatarImage.alt = "Avatar Femenino";
     }
   }
