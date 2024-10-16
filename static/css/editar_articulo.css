@@ -28,6 +28,7 @@
 .textarea_custom1 {
     resize: none; 
     overflow: auto; 
+    padding: 10px;
     height: 500px; 
     width: 535px; /*  cambie el tamaño verticalmente */
 }
